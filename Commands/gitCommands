@@ -1,10 +1,10 @@
 git init
 git pull https://github.com/devroser/Unity
 
-git add . 
+git add .
 git status
 
-git commit -m "Tercer commit"
+git commit -m ""
 
 git remote add origin https://github.com/devroser/Unity
 git push -u origin master
