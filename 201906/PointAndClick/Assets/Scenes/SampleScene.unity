@@ -271,9 +271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 6786813710947309959, guid: 15995b2d79ad0e45ea7bffb30cdceb43, type: 3}
   spawnValues: {x: 9.5, y: 4.7}
-  enemyCount: 5
-  startWait: 2
-  spawnWait: 10
+  enemyCount: 10
+  startWait: 1
+  spawnWait: 1
 --- !u!4 &235551904
 Transform:
   m_ObjectHideFlags: 0
@@ -471,7 +471,7 @@ PrefabInstance:
     - target: {fileID: 6786813710947309982, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15995b2d79ad0e45ea7bffb30cdceb43, type: 3}
