@@ -271,9 +271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 6786813710947309959, guid: 15995b2d79ad0e45ea7bffb30cdceb43, type: 3}
   spawnValues: {x: 9.5, y: 4.7}
-  enemyCount: 10
+  enemyCount: 5
   startWait: 1
-  spawnWait: 1
+  spawnWait: 2
 --- !u!4 &235551904
 Transform:
   m_ObjectHideFlags: 0
@@ -378,6 +378,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3179383025192737955, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
+        type: 3}
+      propertyPath: restless
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3179383025192737955, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
+        type: 3}
+      propertyPath: minTimeToChangeDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3179383025192737955, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
+        type: 3}
+      propertyPath: maxTimeToChangeDirection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3179383025192737955, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6786813710947309957, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
         type: 3}
       propertyPath: m_Enabled
@@ -416,12 +436,12 @@ PrefabInstance:
     - target: {fileID: 6786813710947309979, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6786813710947309979, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6786813710947309979, guid: 15995b2d79ad0e45ea7bffb30cdceb43,
         type: 3}
