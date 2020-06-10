@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6786813710947309977}
   - component: {fileID: 6786813710947309956}
   - component: {fileID: 6786813710947309982}
+  - component: {fileID: 135041814464434749}
   - component: {fileID: 3179383025192737955}
   m_Layer: 0
   m_Name: Enemy
@@ -32,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 6786813710947309959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -156,6 +157,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d33c0090b412077c8ccdadd7122d539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &135041814464434749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6786813710947309959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a420dfd7ffe4758c7b4a9b8183582ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextEnemyLevel: {fileID: 9038700170287926558, guid: 0e5fa1877b327ae5fb69265fe100dfdf,
+    type: 3}
 --- !u!114 &3179383025192737955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f06ccfcaa9d1c1d8a4c5ee2b005cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  restless: 1
+  speed: 6
+  restless: 0
   minTimeToChangeDirection: 1
   maxTimeToChangeDirection: 1.5
