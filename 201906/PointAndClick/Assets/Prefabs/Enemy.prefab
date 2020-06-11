@@ -184,6 +184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  restless: 0
+  restless: 1
   minTimeToChangeDirection: 1
   maxTimeToChangeDirection: 1.5

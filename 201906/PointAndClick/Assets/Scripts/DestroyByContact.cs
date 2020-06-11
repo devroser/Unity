@@ -8,11 +8,26 @@ public class DestroyByContact : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (hasSameTag(collision) && hasNextEnemyLevel())
         {
-            Destroy(gameObject);
-
-            Instantiate(nextEnemyLevel, transform.position, transform.rotation);
+            Destroy(gameObject);            
+            createNextEnemyLevel(collision);
         }
+    }
+
+    private bool hasSameTag(Collision2D collision){
+        return gameObject.tag == collision.gameObject.tag;
+    }
+    private bool hasNextEnemyLevel(){
+        return nextEnemyLevel != null;
+    }
+
+    private void createNextEnemyLevel(Collision2D collision){
+        if(isObjectWithGreaterID(collision)){
+            Instantiate(nextEnemyLevel, transform.position, transform.rotation);            
+        }
+    }
+    private bool isObjectWithGreaterID(Collision2D collision){
+        return gameObject.GetInstanceID() > collision.gameObject.GetInstanceID();
     }
 }

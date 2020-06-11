@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1107607275805116474}
   m_Layer: 0
   m_Name: Enemy_Little
-  m_TagString: Enemy
+  m_TagString: Enemy_Little
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 601cf55271f4904d9876b2d868da1539, type: 2}
+  - {fileID: 2100000, guid: 81308f69af167705cb15779dd8955ebc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183,6 +183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  restless: 0
+  restless: 1
   minTimeToChangeDirection: 1
   maxTimeToChangeDirection: 2
