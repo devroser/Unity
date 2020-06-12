@@ -5,49 +5,47 @@ using UnityEngine;
 public class DestroyByRaycast : MonoBehaviour
 {
 
-    private Vector2 currentMousePosition;
-    private Vector2 worldMousePosition;
-    
-
-    void Start(){}
-
     void Update()
     {
-        ProcessInputs();
         DestroyOnClick();
-    }
-
-    private void ProcessInputs()
-    {
-        currentMousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
     }
 
     private void DestroyOnClick()
     {
         if (LeftMouseClicked())
         {
-            DetectRayCastCollisionAndDestroy();
+            DetectRayCastHitAndDestroy();
         }
     }
     private bool LeftMouseClicked(){
         return Input.GetMouseButtonDown(0);
     }        
-    private void DetectRayCastCollisionAndDestroy()
+    private void DetectRayCastHitAndDestroy()
     {
-       worldMousePosition = UpdateWorldMousePosition();
-       
-       RaycastHit2D hit = Physics2D.Raycast(worldMousePosition, Vector2.zero);
-       if(hit.collider != null) {
-           Destroy(hit);
+        RaycastHit rayCastHit;
+        Ray ray = GetScreenPointToRay();
+
+        if (RayCastHits(ray,out rayCastHit))
+        {
+            DestroyGameObject(rayCastHit);
         }
     }
-    private Vector2 UpdateWorldMousePosition()
+
+    private static Ray GetScreenPointToRay()
     {
-        return Camera.main.ScreenToWorldPoint (currentMousePosition);
+        return Camera.main.ScreenPointToRay(Input.mousePosition);
     }
-    private void Destroy(RaycastHit2D hit){
-        if(hit.collider.gameObject==gameObject){
-        Destroy(gameObject); 
-        }        
+
+    private bool RayCastHits(Ray ray, out RaycastHit rayCastHit)
+    {
+        return Physics.Raycast(ray, out rayCastHit);
+    }
+    private void DestroyGameObject(RaycastHit rayCastHit)
+    {
+        BoxCollider boxCollider = rayCastHit.collider as BoxCollider;
+        if (boxCollider != null)
+        {
+            Destroy(boxCollider.gameObject);
+        }
     }
 }

@@ -9,7 +9,7 @@ public class RandomMovement : MonoBehaviour
     public float minTimeToChangeDirection;
     public float maxTimeToChangeDirection;
 
-    private Rigidbody2D rb2D;
+    private Rigidbody rb;
     
     private Vector2 randomDirection;
     private Vector2 randomSpeed;
@@ -18,7 +18,7 @@ public class RandomMovement : MonoBehaviour
 
     void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
         
         updateEnemyMovement();
 
@@ -46,7 +46,7 @@ public class RandomMovement : MonoBehaviour
     
     private void SetVelocity()
     {
-        rb2D.velocity = randomSpeed;
+        rb.velocity = randomSpeed;
     }
 
     IEnumerator RestlessEnemy()

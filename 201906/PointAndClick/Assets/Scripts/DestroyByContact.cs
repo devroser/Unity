@@ -6,7 +6,7 @@ public class DestroyByContact : MonoBehaviour
 {
     public GameObject nextEnemyLevel;
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (hasSameTag(collision) && hasNextEnemyLevel())
         {
@@ -15,19 +15,19 @@ public class DestroyByContact : MonoBehaviour
         }
     }
 
-    private bool hasSameTag(Collision2D collision){
+    private bool hasSameTag(Collision collision){
         return gameObject.tag == collision.gameObject.tag;
     }
     private bool hasNextEnemyLevel(){
         return nextEnemyLevel != null;
     }
 
-    private void createNextEnemyLevel(Collision2D collision){
+    private void createNextEnemyLevel(Collision collision){
         if(isObjectWithGreaterID(collision)){
             Instantiate(nextEnemyLevel, transform.position, transform.rotation);            
         }
     }
-    private bool isObjectWithGreaterID(Collision2D collision){
+    private bool isObjectWithGreaterID(Collision collision){
         return gameObject.GetInstanceID() > collision.gameObject.GetInstanceID();
     }
 }
