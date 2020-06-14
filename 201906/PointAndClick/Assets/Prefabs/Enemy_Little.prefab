@@ -9,14 +9,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9038700170287926530}
-  - component: {fileID: 9038700170287926531}
-  - component: {fileID: 9038700170287926556}
-  - component: {fileID: 816210073277341879}
-  - component: {fileID: -2441523994343337}
-  - component: {fileID: 9038700170287926557}
-  - component: {fileID: 9038700170287926535}
-  - component: {fileID: 2494907496569734820}
-  - component: {fileID: 1107607275805116474}
+  - component: {fileID: 6786813710947309978}
+  - component: {fileID: 6786813710947309957}
+  - component: {fileID: 5302388194620692342}
+  - component: {fileID: 2940960247128157933}
+  - component: {fileID: 6786813710947309956}
+  - component: {fileID: 6786813710947309982}
+  - component: {fileID: 135041814464434749}
+  - component: {fileID: 3179383025192737955}
+  - component: {fileID: 1595832754}
   m_Layer: 0
   m_Name: Enemy_Little
   m_TagString: Enemy_Little
@@ -32,13 +33,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9038700170287926558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.56, y: 0.11, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &9038700170287926531
+--- !u!33 &6786813710947309978
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,7 +47,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9038700170287926558}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &9038700170287926556
+--- !u!23 &6786813710947309957
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +86,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &816210073277341879
+--- !u!54 &5302388194620692342
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,7 +102,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!65 &-2441523994343337
+--- !u!65 &2940960247128157933
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,7 +115,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9038700170287926557
+--- !u!114 &6786813710947309956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!114 &9038700170287926535
+--- !u!114 &6786813710947309982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d33c0090b412077c8ccdadd7122d539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2494907496569734820
+--- !u!114 &135041814464434749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextEnemyLevel: {fileID: 0}
---- !u!114 &1107607275805116474
+--- !u!114 &3179383025192737955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +165,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f06ccfcaa9d1c1d8a4c5ee2b005cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   restless: 1
   minTimeToChangeDirection: 1
-  maxTimeToChangeDirection: 2
+  maxTimeToChangeDirection: 1.5
+--- !u!114 &1595832754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038700170287926558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d570492c9f4ca89d692e419fefb0a4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCountDownTime: 3
+  countdownBar: {fileID: 8156023691838118453, guid: 3719112547ad20be2aa64212471d4e86,
+    type: 3}

@@ -14,5 +14,8 @@ public class BarFilling : MonoBehaviour
     public void SetSize(float sizeNormalized){
         bar.localScale = new Vector3(sizeNormalized,1f);
     }
+    public Vector3 GetScale(){
+        return bar.localScale;
+    }
     
 }
