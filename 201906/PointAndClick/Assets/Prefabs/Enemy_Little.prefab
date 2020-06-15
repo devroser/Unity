@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextEnemyLevel: {fileID: 0}
+  countDownBar: {fileID: 0}
 --- !u!114 &3179383025192737955
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -153,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextEnemyLevel: {fileID: 9038700170287926558, guid: 0e5fa1877b327ae5fb69265fe100dfdf,
     type: 3}
+  countDownBar: {fileID: 8156023691838118453, guid: 3719112547ad20be2aa64212471d4e86,
+    type: 3}
 --- !u!114 &3179383025192737955
 MonoBehaviour:
   m_ObjectHideFlags: 0

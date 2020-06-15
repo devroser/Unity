@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestroyByContact : MonoBehaviour
 {
     public GameObject nextEnemyLevel;
+    public GameObject countDownBar;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -24,7 +25,11 @@ public class DestroyByContact : MonoBehaviour
 
     private void createNextEnemyLevel(Collision collision){
         if(isObjectWithGreaterID(collision)){
-            Instantiate(nextEnemyLevel, transform.position, transform.rotation);            
+            
+            GameObject nextEnemyLevelObject = Instantiate(nextEnemyLevel, transform.position, transform.rotation) as GameObject;
+            GameObject countDownBarObject = Instantiate(countDownBar, new Vector3(transform.position.x,transform.position.y-2f), transform.rotation) as GameObject;
+            countDownBarObject.transform.parent = nextEnemyLevelObject.transform;
+            
         }
     }
     private bool isObjectWithGreaterID(Collision collision){

@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     {
         Vector2 spawnPosition = new Vector2(Random.Range(-spawnIntervalCoordinates.x, spawnIntervalCoordinates.x), Random.Range(-spawnIntervalCoordinates.y, spawnIntervalCoordinates.y));
 		Quaternion spawnRotation = Quaternion.identity;
-        Instantiate(enemy,spawnPosition,spawnRotation);   
+        Instantiate(enemy,spawnPosition,spawnRotation);
     }
     
 }
