@@ -4,3 +4,6 @@ f zoom to an object
 w move object gui
 
 hold v to snap vertex move
+
+Layers menu to hide UI objects
+Gizmos to hide 3D icons
