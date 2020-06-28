@@ -501,9 +501,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c43b0000
+      m_SelectedIDs: ae3b0000
       m_LastClickedID: 0
-      m_ExpandedIDs: a0c2ffffacc4fffff0e5ffffd0faffff5efbffff7c390000
+      m_ExpandedIDs: 3acfffff40d1ffff8ae5ffffd2e9ffff78edffff96efffffaaefffffccf1ffffe2f1ffff5efbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -703,7 +703,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

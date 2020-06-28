@@ -1332,6 +1332,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 1086090213727116341, guid: 71393432ca488454dbb308f4a831fa13,
+        type: 3}
+      propertyPath: autoPlayEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1086090213727116342, guid: 71393432ca488454dbb308f4a831fa13,
         type: 3}
       propertyPath: m_LocalPosition.x
