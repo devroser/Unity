@@ -9,3 +9,10 @@ git commit -m ""
 git remote add origin https://github.com/devroser/Unity
 git push -u origin master
 
+
+Reset working copy to whatever the origin was
+git reset --hard origin/master
+
+
+git cherry -v
+git diff --stat --cached origin/master
