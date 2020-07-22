@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9130089496882091151}
   - component: {fileID: 1637338893271738927}
-  - component: {fileID: 2377083223132214163}
   - component: {fileID: -1983345662579873484}
   - component: {fileID: 64910915}
+  - component: {fileID: 2377083223132214163}
+  - component: {fileID: -3185436234594442792}
   m_Layer: 11
   m_Name: Enemy Bomb
   m_TagString: Untagged
@@ -70,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1473690619
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3b8c24bdf93fe554e8339ca243c688e2, type: 3}
   m_Color: {r: 1, g: 0.94991595, b: 0, a: 1}
@@ -84,19 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2377083223132214163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3238910454381445903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bad5c9ce3447d54ebdc0fefb7867f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 200
 --- !u!50 &-1983345662579873484
 Rigidbody2D:
   serializedVersion: 4
@@ -134,3 +122,29 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.185
+--- !u!114 &2377083223132214163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238910454381445903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bad5c9ce3447d54ebdc0fefb7867f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 200
+--- !u!114 &-3185436234594442792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238910454381445903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c84899a40177ad243a66e7bbc579b41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedOfSpin: 360
